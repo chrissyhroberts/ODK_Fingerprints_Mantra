@@ -3,7 +3,7 @@
 set -e
 
 mkdir -p sdks
-rm -r sdks/*
+if [ -d sdks/* ]; then rm -r sdks/*; fi
 
 # Copy MFS100 dependencies
 if [ ! -f MFS100-Android-SDK-9.0.3.2.zip ]; then

@@ -53,5 +53,5 @@ fun Activity.taskRunner(): TaskRunner {
 }
 
 fun Fragment.availableScanners(): List<ScannerFactory> {
-    return (this.activity!!.application as Keppel).availableScanners
+    return (this.requireActivity().application as Keppel).availableScanners
 }
